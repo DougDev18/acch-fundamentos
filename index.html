@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ACCH Programação</title>
+    <link rel="styleSheet" href="estilo.css">
+</head>
+
+<body>
+    <nav class="nav_tabs">
+        <ul>
+            <li>
+                <input type="radio" id="tab1" class="rd_tab" name="tabs" checked>
+                <label for="tab1" class="tab_label">Questionário</label>
+
+                <div class="tab-content">
+                    <form id="info">
+                        <h2 id="ident">ID: # </h2>
+                        <hr>
+
+                        <p>
+                            <label for="idade">Idade</label>
+                            <input type="number" name="#" id="idade" placeholder="Digite sua idade"><br>
+                        </p>
+
+                        <!--edicao do sexo-->
+                        <p>
+                            <label name="sexo">Sexo
+                            <input type="radio" value="Masculino"> 
+                            <label>Masculino</label>
+
+                            <input type="radio" value="Feminino">
+                            <label>Feminino</label>
+                            </label>
+                        </p>
+
+                        <!--edicao cores olhos e cabelos-->
+                        <p>
+                            <label for="corOlhos">Cor dos Olhos:</label>
+                            <select id="corOlhos">
+                    <option value="azul">Azul</option>
+                    <option value="preto">Preto</option>
+                    <option value="castanho">Castanho</option>
+                    <option value="verde">Verde</option>
+                </select>
+                        </p>
+
+
+                        <p>
+                            <label for="corCabelos">Cor dos Cabelos:</label>
+                            <select id="corCabelos">
+                    <option value="preto">Preto</option>
+                    <option value="loiro">Loiro</option>
+                    <option value="ruivo">Ruivo</option>
+                    <option value="castanho">Castanho</option>
+                </select>
+                        </p>
+
+                        <button id="btn_save">Salvar</button>
+
+                        <button id="btn_cancel">Cancelar</button>
+                    </form>
+                </div>
+            </li>
+
+
+
+
+
+            <li>
+                <input type="radio" id="tab2" class="rd_tab" name="tabs">
+                <label for="tab2" class="tab_label">Listagem</label>
+                <div class="tab-content">
+                    <h2 id="lGeral">Listagem Geral</h2>
+                    <div class="fundoLista">
+
+                        <table>
+                            <tr>
+                                <th>ID</th>
+                                <th id="idade-1">Idade</th>
+                                <th>Sexo</th>
+                                <th>Olhos</th>
+                                <th>Cabelos</th>
+                            </tr>
+
+                            <tr>
+                                <td>........</td>
+                                <td>........</td>
+                                <td>........</td>
+                                <td>........</td>
+                                <td>........</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+
+                <li>
+                    <input type="radio" id="tab3" class="rd_tab" name="tabs">
+                    <label for="tab3" class="tab_label">Sobre</label>
+                    <div class="tab-content">
+                        <h2 id="sobre">RA</h2>
+
+                    </div>
+
+        </ul>
+    </nav>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
